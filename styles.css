@@ -1,0 +1,142 @@
+/*Animations----------*/
+
+/*Rotate----------*/
+
+/*Creating a rotate effect*/
+
+@-webkit-keyframes spin {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+
+
+/*tying the rotate effect to a trigger*/
+.rotate:hover {
+	-webkit-animation: spin 5s infinite;
+	animation: spin 5s infinite;
+}
+
+/*Scale----------*/
+
+@-webkit-keyframes enlarge {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.9);
+	}
+}
+
+@keyframes enlarge {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.9);
+	}
+}
+
+.scale:hover {
+	-webkit-animation: enlarge 10s infinite;
+	animation: enlarge 10s infinite;
+}
+
+/*Rainbow----------*/
+
+@-webkit-keyframes rainbow {
+	0% {
+		background: lime;
+	}
+	25% {
+		background: yellow;
+	}
+	50% {
+		background: orange;
+	}
+	75% {
+		background: red;
+	}
+}
+
+@keyframes rainbow {
+	0% {
+		background: lime;
+	}
+	25% {
+		background: yellow;
+	}
+	50% {
+		background: orange;
+	}
+	75% {
+		background: red;
+	}
+}
+.background-effect{
+	border-radius: 50%;
+	-webkit-animation: rainbow 5s infinite;
+	animation: rainbow 5s infinite;
+}
+
+/*Move to another position----------*/
+
+@-webkit-keyframes position {
+	0% {
+		left:0;
+	}
+	25% {
+		left:200;
+	}
+	50% {
+		left:400;
+	}
+	75% {
+		left:800;
+	}
+}
+@keyframes position {
+	0% {
+		left:0;
+	}
+	25% {
+		left:200;
+	}
+	50% {
+		left:400;
+	}
+	75% {
+		left:800;
+	}
+}
+.move{
+	/*position: fixed;*/
+	bottom:0;
+	-webkit-animation: position .05s infinite;
+	animation: position .05s infinite alternate;
+}
+
+
+
+
+
+
+
+
+
+
+
+
